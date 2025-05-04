@@ -11,7 +11,7 @@
     font-size: 16px;
     color: #2f2f2f;
     line-height: 1.6;
-    background-color: #fefefe;
+    background-color: #efeae3;
   }
   
   h1, h2, h3 {
@@ -20,6 +20,24 @@
     color: #5f6b73;
     margin-top: 1.5rem;
     text-align: center;
+  }
+  
+  /* Top Bar Styles */
+  .top-bar {
+    background-color: #efeae3;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #c2cfc2;
+    line-height: 0;
+  }
+  
+  .top-bar-logo {
+    height: 60px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
   }
   
   /* Header Styles */
@@ -39,7 +57,7 @@
   }
   
   nav ul li a {
-    color: #fefefe;
+    color: #efeae3;
     text-decoration: none;
     font-weight: bold;
   }
@@ -49,18 +67,37 @@
   }
   
   /* Main Welcome Section */
-  #welcome-message {
+  .welcome-message {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1 rem;
     text-align: center;
-    padding: 50px 20px;
   }
   
-  .hero-image {
-    width: 100%;
+  .carousel {
+    position: relative;
     max-width: 600px;
-    margin-top: 20px;
-    border-radius: 10px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    overflow: hidden;
+  }  
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 8px;
   }
   
+  .carousel-image.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
   /* Facebook Feed Section */
   #facebook-feed {
     text-align: center;
@@ -80,7 +117,7 @@
   a.button {
     display: inline-block;
     background-color: #7d9775;
-    color: #fefefe;
+    color: #efeae3;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -95,20 +132,22 @@
     background-color: #d4b36f;
   }
   
-  .hero-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 1rem;
-  }
-  
   /* Footer Styles */
   footer {
     text-align: center;
-    margin-top: 50px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     background-color: #7d9775;
-    color: #fefefe;
+    color: #efeae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+    line-height: 1;
   }
   
   

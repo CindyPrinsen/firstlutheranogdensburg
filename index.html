@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<!-- Top Bar -->
+<div class="top-bar">
+    <a href="index.html">
+    <img src="images/logo_top_bar.png" alt="First Lutheran Logo" class="top-bar-logo" />
+    </a>
+</div>
+
   <!-- Header -->
   <header>
     <nav>
@@ -23,11 +30,14 @@
 
   <!-- Main Welcome -->
   <section id="home">
-    <div class="welcome-message">
-      <h1>Welcome to First Lutheran!</h1>
-      <p>We are so glad you're here! Join us for worship, fellowship, and community.</p>
-      <img src="images/logo_green.jpg" alt="logo_green" class="hero-image" />
-    </div>
+         <div class="welcome-message">
+            <h1>Welcome to First Lutheran!</h1>
+            <p>We are so glad you're here! Join us for worship, fellowship, and community.</p>
+            <div class="carousel">
+                <img src="images/logo_green.jpg" class="carousel-image active" alt="logo_green" />
+                <img src="images/church_exterior.jpg" class="carousel-image" alt="church_exterior" />
+            </div>
+        </div>
   </section>
 
   <!-- Facebook Embed -->
@@ -90,6 +100,23 @@
   <!-- Facebook SDK -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+
+  <!-- Carousel Script -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".carousel-image");
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+  
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 4500);
+  </script>
   
 </body>
 </html>
