@@ -6,41 +6,41 @@
   <title>First Lutheran Church Ogdensburg</title>
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Source+Sans+3&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
-<!-- Top Bar -->
-<div class="top-bar">
-    <a href="index.html">
-    <img src="images/logo_top_bar.png" alt="First Lutheran Logo" class="top-bar-logo" />
-    </a>
-</div>
 
   <!-- Header -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#messages">Messages</a></li>
-        <li><a href="#giving">Online Giving</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <a href="index.html">
+        <img src="images/logo_header.png" alt="First Lutheran Church Logo" class="logo" />
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#messages">Messages</a></li>
+          <li><a href="#giving">Online Giving</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Welcome -->
-  <section id="home">
+  <!-- Welcome Section -->
+  <section class="section section-accent">
          <div class="welcome-message">
-            <h1>Welcome to First Lutheran Church Ogdensburg!</h1>
+            <h1>Welcome to First Lutheran Church!</h1>
             <div class="carousel">
-                <img src="images/logo_green.jpg" class="carousel-image active" alt="logo_green" />
+                <img src="images/logo_green.jpg" class="carousel-image active" alt="logo_16_9" />
                 <img src="images/church_exterior.jpg" class="carousel-image" alt="church_exterior" />
             </div>
         </div>
   </section>
 
-  <!-- Facebook Embed -->
-  <section id="facebook-feed">
+  <!-- Facebook + Events -->
+  <section class="section section-default two-column">
     <h2>Follow Our Latest Messages</h2>
     <div class="fb-page"
         data-href="https://www.facebook.com/firstlutheranogdensburg"
@@ -51,51 +51,64 @@
         data-adapt-container-width="true"
         data-hide-cover="true"
         data-show-facepile="false">
-        
         <blockquote cite="https://www.facebook.com/firstlutheranogdensburg"
-        class="fb-xfbml-parse-ignore"><a
-        href="https://www.facebook.com/firstlutheranogdensburg">
-        First Lutheran Ogdensburg LCMC
-        </a>
+            class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/firstlutheranogdensburg">First Lutheran Ogdensburg LCMC</a>
         </blockquote>
-     </div>
+    </div>
+     <div class="column events">
+        <h2>Upcoming Events</h2>
+        <p>Check back soon for updates!</p>
+      </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We would love for you to get to know us better. Please click on the button below to find out more.</p>
+  <!-- Info Grid -->
+  <section class="section section-accent info-grid">
+    <div class="info-row">
+        <div class="info-image"><img src="images/about.jpg" alt="About Us" /></div>
+        <div class="info-text">
+            <h2>About Us</h2>
+            <p>We would love for you to get to know us better. Please click on the button below to find out more.</p>
+            <a href="#about" class="button">Learn More</a>
+        </div>
+    </div>
+    <div class="info-row reverse">
+        <div class="info-image"><img src="images/messages.jpg" alt="Messages" /></div>
+        <div class="info-text">
+            <h2>Messages</h2>
+            <p>You can listen to past sermons here. Simply click on the button below. An online kids devotional is also available.</p>
+            <a href="#messages" class="button">Watch Now</a>
+        </div>
+    </div>
+    <div class="info-row">
+        <div class="info-image"><img src="images/giving.png" alt="Online Giving" /></div>
+        <div class="info-text">
+            <h2>Online Giving</h2>
+            <p>Online giving is available! Click the button below to give now.</p>
+            <a href="#giving" class="button">Give Now</a>
+        </div>
+    </div>
+    <div class="info-row reverse">
+        <div class="info-image"><img src="images/contact.jpg" alt="Contact Us" /></div>
+        <div class="info-text">
+            <h2>Contact Us</h2>
+            <p>We would love for you to join us each week. Contact us for more information or if you have any questions.</p>
+            <a href="#contact" class="button">Contact Us</a>
+        </div>
+    </div>
   </section>
 
-  <!-- Messages -->
-  <section id="messages">
-    <h2>Messages</h2>
-    <p>You can listen to past sermons here. Simply click on the button below. An online kids devotional is also available.</p>
-  </section>
-
-  <!-- Online Giving -->
-  <section id="giving">
-    <h2>Online Giving</h2>
-    <p>Online giving is available!</p>
-    <a href="https://www.example.com/give" class="button">Give Now</a>
-  </section>
-
-  <!-- Upcoming Events -->
-  <section id="upcoming-events">
-    <h2>Upcoming Events</h2>
-    <p>Christmas Eve Candlelight service at 6p.m.</p>
-   </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>We would love for you to join us each week. Contact us for more information or if you have any questions.</p>
-    <address>
-      Email: <a href="mailto:firstlutherancp@yahoo.com">firstlutherancp@yahoo.com</a><br />
-      Phone: (920) 244-7881<br />
-      Address: 700 Main St, Ogdensburg, WI 54962
-    </address>
-  </section>
+  <!-- About First Lutheran Ogdensburg -->
+    <section class="section section-default about-final">
+        <div class="column image">
+            <img src="images/about_final.jpg" alt="About Us" />
+        </div>
+        <div class="column text">
+            <h2>About First Lutheran Ogdensburg</h2>
+            <p>First Lutheran Church is family of sinners saved by grace through faith in the crucified and risen Jesus Christ. We love to worship God, laugh together and lean on each other in good times and bad. Our Mission is to love and serve God and love and serve people!</p>
+            <p>Nestled in the scenic country woods of Ogdensburg, WI, just 10 miles from Waupaca's Chain of Lakes, we meet Sunday mornings at 9a.m. at 700 Main Street in the village of Ogdensburg.</p>
+            </div>
+    </section>
 
   <!-- Footer -->
   <footer>
