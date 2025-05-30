@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Support First Lutheran Church Ogdensburg through online giving. Your generosity helps us continue our mission and serve our community.">
+  <meta property="og:title" content="Give to First Lutheran Church Ogdensburg">
+  <meta property="og:description" content="Give online to support the ministries of First Lutheran Church in Ogdensburg, Wisconsin. Your donation makes a difference.">
+  <meta property="og:image" content="https://firstlutheranogdensburg.com/images/about.webp">
+  <meta property="og:url" content="https://firstlutheranogdensburg.com/giving.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Giving | First Lutheran Church Ogdensburg</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Hamburger Button (Left-Aligned) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+      <!-- Logo (Centered) -->
+      <div class="logo-wrapper">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo_header.webp" alt="First Lutheran Church Logo" class="logo" />
+        </a>
+      </div>
+
+      <!-- Navigation Menu (Right-Aligned) -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="giving.html">Online Giving</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="giving">
+      <div class="container">
+        <h1>Online Giving</h1>
+        <p>Here you can find our online giving and support our ministry.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> First Lutheran Church Ogdensburg. All rights reserved.</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

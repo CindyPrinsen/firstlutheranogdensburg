@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="images/favicon.ico" />
 </head>
+
 <body>
 
   <!-- Header / Navigation -->
@@ -34,10 +35,10 @@
       <!-- Navigation Menu (Right-Aligned) -->
       <nav class="nav" id="nav-menu">
         <ul class="nav-menu">
-          <li><a href="">Home</a></li>
-          <li><a href="#messages">Messages</a></li>
-          <li><a href="#giving">Online Giving</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="giving.html">Online Giving</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -61,7 +62,7 @@
       <div class="info-text">
         <h2>Messages</h2>
         <p>You can listen to past sermons here. Simply click on the button below. An online kids devotional is also available.</p>
-        <a href="#messages" class="button">Watch Now</a>
+        <a href="messages.html" class="button">Watch Now</a>
       </div>
     </div>
 
@@ -72,7 +73,7 @@
       <div class="info-text">
         <h2>Online Giving</h2>
         <p>Online giving is available! Click the button below to give now.</p>
-        <a href="#giving" class="button">Give Now</a>
+        <a href="giving.html" class="button">Give Now</a>
       </div>
     </div>
 
@@ -83,7 +84,7 @@
       <div class="info-text">
         <h2>Contact Us</h2>
         <p>We would love for you to join us each week. Contact us for more information or if you have any questions.</p>
-        <a href="#contact" class="button">Contact Us</a>
+        <a href="contact.html" class="button">Contact Us</a>
       </div>
     </div>
   </section>
@@ -144,15 +145,8 @@
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
 
   <!-- Mobile Nav Script -->
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+  <script src="script.js"></script>
 
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-  </script>
 
 </body>
 </html>
