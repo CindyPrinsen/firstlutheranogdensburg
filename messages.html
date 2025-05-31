@@ -18,19 +18,17 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <div class="header-container">
-      <!-- Hamburger Button (Left-Aligned) -->
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
 
-      <!-- Logo (Centered) -->
       <div class="logo-wrapper">
         <a href="index.html" class="logo-link">
           <img src="images/logo_header.webp" alt="First Lutheran Church Logo" class="logo" />
         </a>
       </div>
 
-      <!-- Navigation Menu (Right-Aligned) -->
       <nav class="nav" id="nav-menu">
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
@@ -42,16 +40,76 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main>
-    <section class="messages">
-      <div class="container">
+    <!-- Page Banner -->
+    <section class="page-banner messages-banner">
+      <div class="banner-overlay">
         <h1>Messages</h1>
-        <p>Here you can find our recent sermons and messages.</p>
-        <!-- You can embed videos, audio, or text summaries here -->
+      </div>
+    </section>
+
+    <!-- Two-Column Content -->
+    <section class="messages-content">
+      <div class="container two-column-layout">
+
+        <!-- Left Column: Facebook Embed -->
+        <div class="messages-left">
+          <h2>Recent Messages</h2>
+          <div class="fb-embed-box">
+            <div class="fb-page"
+              data-href="https://www.facebook.com/firstlutheranogdensburg"
+              data-tabs="timeline"
+              data-width="500"
+              data-height="575"
+              data-small-header="true"
+              data-adapt-container-width="true"
+              data-hide-cover="true"
+              data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/firstlutheranogdensburg" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/firstlutheranogdensburg">First Lutheran Church Ogdensburg</a>
+              </blockquote>
+            </div>
+
+            <p class="external-link">
+              <a href="https://www.facebook.com/firstlutheranogdensburg" target="_blank" rel="noopener noreferrer">
+                View more messages on Facebook
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: Devotional -->
+        <div class="messages-right">
+          <h2>Children's Devotional</h2>
+          <div class="devotional-box">
+            <div style="height: 2rem;"></div>
+            <p class="devotional-description">
+              Help your children grow in faith with engaging, age-appropriate devotionals. We recommend this resource for families.
+            </p>
+            <div style="height: 1rem;"></div>
+
+            <a href="https://www.keysforkids.org/Programming/Keys-for-Kids-Daily-Devotional/Read-Listen" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="devotional-button">
+              Visit Keys for Kids Devotional
+            </a>
+
+            <div style="height: 2rem;"></div>
+            <a href="https://www.keysforkids.org/Programming/Keys-for-Kids-Daily-Devotional/Read-Listen" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              <img src="images/keys_for_kids.webp" alt="Keys for Kids" class="devotional-image" />
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; <span id="year"></span> First Lutheran Church Ogdensburg. All rights reserved.</p>
     <script>
@@ -59,6 +117,13 @@
     </script>
   </footer>
 
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+    nonce="XYZ"></script>
+
+  <!-- Custom Script -->
   <script src="script.js"></script>
 </body>
 </html>
