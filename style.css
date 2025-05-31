@@ -458,6 +458,9 @@ footer p {
   }
 }
 
+/* ==================================
+   MESSAGES PAGE
+================================== */
 .messages-content {
   padding: 4rem 1rem;
 }
@@ -544,4 +547,98 @@ footer p {
 
 .fb-embed-box .external-link {
   margin-top: 1rem;
+}
+
+/* ==================================
+   ONLINE GIVING PAGE
+================================== */
+.giving-section {
+  background-color: #fdfaf5;
+  padding: 4rem 1rem;
+}
+
+.giving-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.giving-image {
+  flex: 1 1 45%;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
+
+.giving-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.giving-text {
+  flex: 1 1 45%;
+  max-width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+}
+
+.giving-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3a4a5a;
+  font-family: 'Raleway', sans-serif;
+}
+
+.giving-text p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.giving-text .button {
+  padding: 0.75rem 1.5rem;
+  background-color: #86a96b;
+  color: #fdfaf5;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.giving-text .button:hover {
+  background-color: #6c8554;
+}
+
+/* Responsive: Stack layout and increase gap */
+@media (max-width: 768px) {
+  .giving-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .giving-text {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .giving-image {
+    order: 2;
+    max-width: 100%;
+    margin-top: 2.5rem; /* Increased gap between text and image */
+  }
+
+  .giving-image img {
+    max-width: 90%;
+  }
 }
