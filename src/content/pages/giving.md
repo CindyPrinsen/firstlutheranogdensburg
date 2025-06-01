@@ -1,12 +1,12 @@
 ---
-title: This is a test now!
+title: Online Giving
 logo_image: /media/logo_header.webp
 logo_alt: First Lutheran Church Logo
 nav_home: Home
 nav_messages: Messages
 nav_giving: Online Giving
 nav_contact: Contact
-banner_title: Online Giving
+banner_title: This is a test!
 giving_image: /media/giving_photo.webp
 giving_button_text: Give Now
 layout: giving.njk
