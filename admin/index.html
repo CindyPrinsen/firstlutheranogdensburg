@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/@decapcms/core@latest/dist/decap-cms.js"></script>
   </head>
   <body>
+    <script type="module">
+      import CMS from "https://cdn.skypack.dev/@decapcms/core";
+      CMS.init();
+    </script>
   </body>
 </html>
