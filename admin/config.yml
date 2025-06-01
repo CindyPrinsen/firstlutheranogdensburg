@@ -8,7 +8,7 @@ backend:
   client_id: "Ov23li5oY7OMdM6mbUeN"
   client_secret: "f75eafc97fba5efa5fb79df40f73e1d3ed0bf67b"
 
-media_folder: "static/media"  # Folder for uploaded images (adjust if you want)
+media_folder: "static/media"
 public_folder: "/media"
 
 collections:
