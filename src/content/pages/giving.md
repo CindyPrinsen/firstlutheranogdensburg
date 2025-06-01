@@ -1,4 +1,5 @@
 ---
+layout: giving.njk
 title: Online Giving
 logo_image: /media/logo_header.webp
 logo_alt: First Lutheran Church Logo
@@ -9,7 +10,6 @@ nav_contact: Contact
 banner_title: Online Giving
 giving_image: /media/giving_photo.webp
 giving_button_text: Give Now
-layout: giving.njk
 giving_image_alt: Giving
 giving_heading: Support Our Mission
 giving_paragraph: Click the button below to make a secure donation through
