@@ -2,14 +2,11 @@ backend:
   name: github
   repo: bthuerman/firstlutheranogdensburg
   branch: main
-  squash_merges: true
-  auth_scope: "repo"
-  auth_type: "implicit"
-  client_id: "Ov23li5oY7OMdM6mbUeN"
-  client_secret: "f75eafc97fba5efa5fb79df40f73e1d3ed0bf67b"
+  auth_type: implicit
+  client_id: Ov23li5oY7OMdM6mbUeN
 
 media_folder: "static/media"
-public_folder: "/media"
+public_folder: "/static/media"
 
 collections:
   - name: "pages"
