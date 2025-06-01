@@ -1,4 +1,4 @@
-layout: /giving.njk
+layout: giving.njk
 
 ---
 title: "Giving Page"
