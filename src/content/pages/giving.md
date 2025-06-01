@@ -1,3 +1,5 @@
+layout: /giving.njk
+
 ---
 title: "Giving Page"
 logo_image: "/images/logo_header.webp"

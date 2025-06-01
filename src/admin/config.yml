@@ -9,13 +9,27 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "content/pages/home.md"
-        label: "Home Page"
-        name: "home"
+      - file: "src/content/pages/giving.md"
+        label: "Giving Page"
+        name: "giving"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Body"
-            name: "body"
-            widget: "markdown"
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Logo Image", name: "logo_image", widget: "image" }
+          - { label: "Logo Alt Text", name: "logo_alt", widget: "string" }
+
+          - { label: "Nav - Home", name: "nav_home", widget: "string" }
+          - { label: "Nav - Messages", name: "nav_messages", widget: "string" }
+          - { label: "Nav - Giving", name: "nav_giving", widget: "string" }
+          - { label: "Nav - Contact", name: "nav_contact", widget: "string" }
+
+          - { label: "Banner Title", name: "banner_title", widget: "string" }
+
+          - { label: "Giving Image", name: "giving_image", widget: "image" }
+          - { label: "Giving Image Alt Text", name: "giving_image_alt", widget: "string" }
+
+          - { label: "Giving Heading", name: "giving_heading", widget: "string" }
+          - { label: "Giving Paragraph", name: "giving_paragraph", widget: "text" }
+          - { label: "Button Link", name: "giving_button_link", widget: "string" }
+          - { label: "Button Text", name: "giving_button_text", widget: "string" }
+
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
