@@ -24,16 +24,16 @@
 
       <div class="logo-wrapper">
         <a href="/index" class="logo-link">
-          <img src="/images/logo_header.webp" alt="First Lutheran Church Logo" class="logo" />
+          <img src="{{ logo_image }}" alt="{{ logo_alt }}" class="logo" />
         </a>
       </div>
 
       <nav class="nav" id="nav-menu">
         <ul class="nav-menu">
-          <li><a href="/index">Home</a></li>
-          <li><a href="/messages">Messages</a></li>
-          <li><a href="/giving">Online Giving</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/index">{{ nav_home }}</a></li>
+          <li><a href="/messages">{{ nav_messages }}</a></li>
+          <li><a href="/giving">{{ nav_giving }}</a></li>
+          <li><a href="/contact">{{ nav_contact }}</a></li>
         </ul>
       </nav>
     </div>
@@ -42,26 +42,26 @@
   <main>
     <section class="page-banner giving-banner">
       <div class="banner-overlay">
-        <h1>Online Giving</h1>
+        <h1>{{ banner_title }}</h1>
       </div>
     </section>
 
     <section class="giving-section">
       <div class="giving-container">
         <div class="giving-image">
-          <img src="/images/giving_photo.webp" alt="Giving">
+          <img src="{{ giving_image }}" alt="{{ giving_image_alt }}">
         </div>
         <div class="giving-text">
-          <h2>Support Our Mission</h2>
-          <p>Click the button below to make a secure donation through PayPal. You don't need a PayPal account to give.</p>
-          <a href="https://www.paypal.com/donate?hosted_button_id=D9CX4Q7YQY5RU" target="_blank" class="button">Give Now</a>
+          <h2>{{ giving_heading }}</h2>
+          <p>{{ giving_paragraph }}</p>
+          <a href="{{ giving_button_link }}" target="_blank" class="button">{{ giving_button_text }}</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> First Lutheran Church Ogdensburg. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> {{ footer_text }}</p>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
