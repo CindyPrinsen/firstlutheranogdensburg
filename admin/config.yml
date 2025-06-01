@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: bthuerman/firstlutheranogdensburg
+  name: git-gateway
   branch: main
-  auth_type: implicit
-  client_id: Ov23li5oY7OMdM6mbUeN
 
 media_folder: "static/media"
 public_folder: "/static/media"
@@ -11,9 +8,14 @@ public_folder: "/static/media"
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "content/pages"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - file: "content/pages/home.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
