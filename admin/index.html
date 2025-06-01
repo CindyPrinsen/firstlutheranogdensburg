@@ -5,6 +5,9 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <script src="https://unpkg.com/@decapcms/decap-cms@latest/dist/decap-cms.js"></script>
+    <script type="module">
+      import CMS from "https://esm.sh/@decapcms/decap-cms@latest";
+      CMS.init();
+    </script>
   </body>
 </html>
