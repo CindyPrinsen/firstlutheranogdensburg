@@ -1,3 +1,20 @@
+---
+title: asdf
+logo_image: /media/logo_header.webp
+logo_alt: asdf
+nav_home: asdf
+nav_messages: asdf
+nav_giving: asdf
+nav_contact: asdf
+banner_title: asdf
+giving_image: /media/giving_photo.webp
+giving_image_alt: asdf
+giving_heading: asdf
+giving_paragraph: asdf
+giving_button_link: asdf
+giving_button_text: asdf
+footer_text: adsf
+---
 layout: giving.njk
 
 ---
