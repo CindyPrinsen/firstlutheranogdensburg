@@ -1,0 +1,735 @@
+/* ==================================
+   RESET
+================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================================
+   GLOBAL STYLES
+================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fdfaf5;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #3a4a5a;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ==================================
+   HEADER
+================================== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #86a96b;
+  padding: 15px 20px;
+  border-bottom: 3px solid #f7f2eb;
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fdfaf5;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #6c8554;
+}
+
+nav a {
+  font-size: 1rem;
+}
+
+/* ==================================
+   HAMBURGER MENU (MOBILE)
+================================== */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fdfaf5;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+    min-height: 80px;
+  }
+
+  .header-container {
+    justify-content: center;
+    gap: 1rem;
+    height: 40px;
+  }
+
+  .logo-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #86a96b;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 1.5rem;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+    animation: slideDown 0.4s ease forwards;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================================
+   WELCOME SECTION
+================================== */
+.welcome-section {
+  background: url('images/church_exterior.webp') center/cover no-repeat;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdfaf5;
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome-text {
+  background: rgba(0, 0, 0, 0);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.welcome-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fdfaf5;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  color: #fdfaf5;
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    max-height: 80vh;
+  }
+}
+
+/* ==================================
+   SECTION STYLES
+================================== */
+.section {
+  padding: 3rem 1rem;
+}
+
+.section-default {
+  background-color: #fdfaf5;
+}
+
+.section-accent {
+  background-color: #f7f2eb;
+}
+
+/* ==================================
+   INFO GRID SECTION
+================================== */
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.info-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-text, .info-image {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.info-text {
+  flex-direction: column;
+  text-align: center;
+}
+
+.info-text h2 {
+  margin-top: 1rem;
+}
+
+.info-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .info-row,
+  .info-row.reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-text, .info-image {
+    max-width: 75%;
+    padding: 1rem 0;
+  }
+
+  .info-image {
+    display: none;
+  }
+}
+
+/* ==================================
+   TWO COLUMN SECTION
+================================== */
+.section-inner, .two-column, .about-final {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1 1 48%;
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column.facebook {
+  text-align: center;
+}
+
+.column.facebook .fb-page {
+  width: 100% !important;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.column.events .event-box p {
+  font-size: 20px;
+}
+
+.event-box {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 350px;
+  height: 100%;
+}
+
+.fb-container {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .two-column, .about-final {
+    flex-direction: column;
+  }
+
+  .two-column .column,
+  .about-final .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .event-box {
+    min-height: 300px;
+  }
+
+  .about-final .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-final .image img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #86a96b;
+  color: #fdfaf5;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #6c8554;
+  color: #fdfaf5;
+}
+
+/* ==================================
+   FOOTER
+================================== */
+footer {
+  text-align: center;
+  padding: 0;
+  background-color: #86a96b;
+  color: #fdfaf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1;
+}
+
+/* ==================================
+   SUBPAGE BANNERS
+================================== */
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay h1 {
+  color: #fdfaf5;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.messages-banner {
+  background-image: url('images/messages_banner.webp');
+}
+
+.giving-banner {
+  background-image: url('images/giving_banner.webp');
+}
+
+.contact-banner {
+  background-image: url('images/contact_banner.webp');
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    height: 200px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ==================================
+   MESSAGES PAGE
+================================== */
+.messages-content {
+  padding: 4rem 1rem;
+}
+
+.two-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.messages-left, .messages-right {
+  flex: 1 1 450px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-left h2, .messages-right h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.messages-left iframe {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border: none;
+}
+
+.devotional-box, .fb-embed-box {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.devotional-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.devotional-box .devotional-button {
+  background-color: #86a96b;
+  color: #fdfaf5;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.devotional-box .devotional-button:hover {
+  background-color: #6d8b58;
+}
+
+.devotional-box .devotional-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fb-embed-box .fb-page {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.fb-embed-box .external-link {
+  margin-top: 1rem;
+}
+
+/* ==================================
+   ONLINE GIVING PAGE
+================================== */
+.giving-section {
+  background-color: #fdfaf5;
+  padding: 4rem 1rem;
+}
+
+.giving-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.giving-image {
+  flex: 1 1 45%;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
+
+.giving-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.giving-text {
+  flex: 1 1 45%;
+  max-width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+}
+
+.giving-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3a4a5a;
+  font-family: 'Raleway', sans-serif;
+}
+
+.giving-text p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.giving-text .button {
+  padding: 0.75rem 1.5rem;
+  background-color: #86a96b;
+  color: #fdfaf5;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.giving-text .button:hover {
+  background-color: #6c8554;
+}
+
+/* Responsive: Stack layout and increase gap */
+@media (max-width: 768px) {
+  .giving-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .giving-text {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .giving-image {
+    order: 2;
+    max-width: 100%;
+    margin-top: 2.5rem; /* Increased gap between text and image */
+  }
+
+  .giving-image img {
+    max-width: 90%;
+  }
+}
+
+/* ===============================
+   CONTACT PAGE
+================================= */
+.contact-section {
+  background-color: #fdfaf5;
+  padding: 4rem 1rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.contact-map {
+  flex: 1 1 45%;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #3a4a5a;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-item .icon {
+  font-size: 1.3rem;
+  color: #86a96b;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #86a96b;
+}
+
+.contact-map {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-map {
+    max-width: 100%;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
+}
