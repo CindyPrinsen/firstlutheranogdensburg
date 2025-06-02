@@ -1,8 +1,5 @@
 ---
-home_accent_row_box_2_paragraph: |-
-  This is my new update!
-  This is another update
-  Here's another!
+home_accent_row_box_2_paragraph: New events coming soon—stay tuned!
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
 home_banner_subtitle: Join us Sundays at 9:00 a.m.
 home_info_grid_row_1_heading: Messages
@@ -35,7 +32,6 @@ home_final_section_paragraph: >-
   the crucified and risen Jesus Christ. We love to worship God, laugh together,
   and lean on each other in good times and bad. Our mission is to love and serve
   God and love and serve people!
-
 
   Nestled in the scenic country woods of Ogdensburg, WI, just 10 miles from Waupaca's Chain of Lakes, we meet Sunday mornings at 9 a.m. at 700 Main Street in the village of Ogdensburg.
 permalink: /
