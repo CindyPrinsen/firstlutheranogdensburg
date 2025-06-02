@@ -109,7 +109,7 @@
         <h2>{{ home_accent_row_box_2_heading }}</h2>
         <div style="height: 1rem;"></div>
         <div class="event-box">
-          <p>{{ home_accent_row_box_2_paragraph }}</p>
+          <p>{{ home_accent_row_box_2_paragraph | replace('\n', '<br>') | safe }}</p>
         </div>
       </div>
     </div>
