@@ -24,6 +24,7 @@ collections:
           - { label: "Banner Title", name: "giving_banner_title", widget: "string" }
 
           - { label: "Image", name: "giving_image", widget: "image" }
+          - { label: "Image Alt Text", name: "giving_image_alt", widget: "string" }
 
           - { label: "Heading", name: "giving_heading", widget: "string" }
           - { label: "Paragraph", name: "giving_paragraph", widget: "text" }
@@ -82,7 +83,7 @@ collections:
         preview_path: "home"
         fields:
           - { label: "☆UPCOMING EVENTS TEXT BOX☆", name: "home_accent_row_box_2_paragraph", widget: "text" }
-          
+
           - { label: "Banner Title", name: "home_banner_title", widget: "string" }
           - { label: "Banner Subtitle", name: "home_banner_subtitle", widget: "string" }
 
