@@ -44,8 +44,8 @@
 
   <section class="welcome-section" id="home">
     <div class="welcome-text">
-      <h1>Welcome to First Lutheran Church Ogdensburg!</h1>
-      <p>Join us Sundays at 9:00 a.m.</p>
+      <h1>{{ home_banner_title }}</h1>
+      <p>{{ home_banner_subtitle }}</p>
     </div>
   </section>
 
@@ -53,34 +53,34 @@
 
     <div class="info-row reverse">
       <div class="info-image">
-        <img src="/images/messages.webp" loading="lazy" alt="Messages">
+        <img src="{{ home_info_grid_row_1_image }}" loading="lazy" alt="{{ home_info_grid_row_1_image_alt }}">
       </div>
       <div class="info-text">
-        <h2>Messages</h2>
-        <p>You can listen to past sermons here. Simply click on the button below. An online kids devotional is also available.</p>
-        <a href="/messages" class="button">Watch Now</a>
+        <h2>{{ home_info_grid_row_1_heading }}</h2>
+        <p>{{ home_info_grid_row_1_paragraph }}</p>
+        <a href="{{ home_info_grid_row_1_button_link }}" class="button">{{ home_info_grid_row_1_button_text }}</a>
       </div>
     </div>
 
     <div class="info-row">
       <div class="info-image">
-        <img src="/images/giving.webp" loading="lazy" alt="Online Giving">
+        <img src="{{ home_info_grid_row_2_image }}" loading="lazy" alt="{{ home_info_grid_row_2_image_alt }}">
       </div>
       <div class="info-text">
-        <h2>Online Giving</h2>
-        <p>Online giving is available! Click the button below to give now.</p>
-        <a href="/giving" class="button">Give Now</a>
+        <h2>{{ home_info_grid_row_2_heading }}</h2>
+        <p>{{ home_info_grid_row_2_paragraph }}</p>
+        <a href="{{ home_info_grid_row_2_button_link }}" class="button">{{ home_info_grid_row_2_button_text }}</a>
       </div>
     </div>
 
     <div class="info-row reverse">
       <div class="info-image">
-        <img src="/images/contact.webp" loading="lazy" alt="Contact Us">
+        <img src="{{ home_info_grid_row_3_image }}" loading="lazy" alt="{{ home_info_grid_row_3_image_alt }}">
       </div>
       <div class="info-text">
-        <h2>Contact Us</h2>
-        <p>We would love for you to join us each week. Contact us for more information or if you have any questions.</p>
-        <a href="/contact" class="button">Contact Us</a>
+        <h2>{{ home_info_grid_row_3_heading }}</h2>
+        <p>{{ home_info_grid_row_3_paragraph }}</p>
+        <a href="{{ home_info_grid_row_3_button_link }}" class="button">{{ home_info_grid_row_3_button_link }}</a>
       </div>
     </div>
   </section>
@@ -88,7 +88,7 @@
   <section class="section section-accent">
     <div class="section-inner two-column">
       <div class="column facebook">
-        <h2>Follow Our Latest Messages</h2>
+        <h2>{{ home_accent_row_box_1_heading }}</h2>
         <div style="height: 1rem;"></div>
         <div class="fb-page"
           data-href="https://www.facebook.com/firstlutheranogdensburg"
@@ -106,10 +106,10 @@
       </div>
 
       <div class="column events">
-        <h2>Upcoming Events</h2>
+        <h2>{{ home_accent_row_box_2_heading }}</h2>
         <div style="height: 1rem;"></div>
         <div class="event-box">
-          <p>New events coming soon—stay tuned!</p>
+          <p>{{ home_accent_row_box_2_paragraph }}</p>
         </div>
       </div>
     </div>
@@ -117,12 +117,11 @@
 
   <section class="section section-default about-final" id="about">
     <div class="column image">
-      <img src="/images/about_final.webp" loading="lazy" alt="About First Lutheran Ogdensburg" />
+      <img src="{{ home_final_section_image }}" loading="lazy" alt="{{ home_final_section_image_alt }}" />
     </div>
     <div class="column text">
-      <h2>About First Lutheran Ogdensburg</h2>
-      <p>First Lutheran Church is a family of sinners saved by grace through faith in the crucified and risen Jesus Christ. We love to worship God, laugh together, and lean on each other in good times and bad. Our mission is to love and serve God and love and serve people!</p>
-      <p>Nestled in the scenic country woods of Ogdensburg, WI, just 10 miles from Waupaca's Chain of Lakes, we meet Sunday mornings at 9 a.m. at 700 Main Street in the village of Ogdensburg.</p>
+      <h2>{{ home_final_section_heading }}</h2>
+      <p>{{ home_final_section_paragraph }}</p>
     </div>
   </section>
 
