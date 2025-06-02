@@ -1,7 +1,7 @@
 ---
 layout: contact.njk
 permalink: /contact/index.html
-contact_title: Online Giving
+contact_title: Contact
 contact_banner_title: Contact Us
 contact_heading: We'd Love to Hear<br>from You!
 contact_address_text: 700 Main St, Ogdensburg, WI 54962
