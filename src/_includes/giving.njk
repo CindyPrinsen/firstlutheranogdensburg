@@ -24,16 +24,16 @@
 
       <div class="logo-wrapper">
         <a href="/index" class="logo-link">
-          <img src="{{ logo_image }}" alt="{{ logo_alt }}" class="logo" />
+          <img src="/images/logo_header.webp" alt="First Lutheran Church Logo" class="logo" />
         </a>
       </div>
 
       <nav class="nav" id="nav-menu">
         <ul class="nav-menu">
-          <li><a href="/index">{{ nav_home }}</a></li>
-          <li><a href="/messages">{{ nav_messages }}</a></li>
-          <li><a href="/giving">{{ nav_giving }}</a></li>
-          <li><a href="/contact">{{ nav_contact }}</a></li>
+          <li><a href="/index">Home</a></li>
+          <li><a href="/messages">Messages</a></li>
+          <li><a href="/giving">Giving</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -49,7 +49,7 @@
     <section class="giving-section">
       <div class="giving-container">
         <div class="giving-image">
-          <img src="{{ giving_image }}" alt="{{ giving_image_alt }}">
+          <img src="{{ giving_image }}" alt="Giving Image">
         </div>
         <div class="giving-text">
           <h2>{{ giving_heading }}</h2>
@@ -61,7 +61,7 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> {{ footer_text }}</p>
+    <p>&copy; <span id="year"></span> First Lutheran Church Ogdensburg. All rights reserved.</p>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
