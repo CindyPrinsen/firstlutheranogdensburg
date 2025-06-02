@@ -12,68 +12,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/content/pages/giving.md"
-        label: "Giving Page"
-        name: "giving"
-        slug: "giving"
-        format: "frontmatter"
-        preview_path: "giving"
-        fields:
-          - { label: "Page (Tab) Title", name: "giving_title", widget: "string" }
-
-          - { label: "Banner Title", name: "giving_banner_title", widget: "string" }
-
-          - { label: "Image", name: "giving_image", widget: "image" }
-          - { label: "Image Alt Text", name: "giving_image_alt", widget: "string" }
-
-          - { label: "Heading", name: "giving_heading", widget: "string" }
-          - { label: "Paragraph", name: "giving_paragraph", widget: "text" }
-          - { label: "Button Link", name: "giving_button_link", widget: "string" }
-          - { label: "Button Text", name: "giving_button_text", widget: "string" }
-
-      - file: "src/content/pages/contact.md"
-        label: "Contact Page"
-        name: "contact"
-        slug: "contact"
-        format: "frontmatter"
-        preview_path: "contact"
-        fields:
-          - { label: "Page (Tab) Title", name: "contact_title", widget: "string" }
-
-          - { label: "Banner Title", name: "contact_banner_title", widget: "string" }
-
-          - { label: "Heading", name: "contact_heading", widget: "text" }                    
-
-          - { label: "Address Text", name: "contact_address_text", widget: "string" }
-          - { label: "Address Link", name: "contact_address_link", widget: "string" }
-          - { label: "Phone Text", name: "contact_phone_text", widget: "string" }
-          - { label: "Phone Link", name: "contact_phone_link", widget: "string" }
-          - { label: "Email Text", name: "contact_email_text", widget: "string" }
-          - { label: "Email Link", name: "contact_email_link", widget: "string" }
-
-          - { label: "Google Maps Embed Link", name: "contact_google_maps_embed_link", widget: "text" }
-
-      - file: "src/content/pages/messages.md"
-        label: "Messages Page"
-        name: "messages"
-        slug: "messages"
-        format: "frontmatter"
-        preview_path: "messages"
-        fields:
-          - { label: "Page (Tab) Title", name: "messages_title", widget: "string" }
-
-          - { label: "Banner Title", name: "messages_banner_title", widget: "string" }
-
-          - { label: "Box 1 Heading", name: "messages_box_1_heading", widget: "string" }
-
-          - { label: "Box 2 Heading", name: "messages_box_2_heading", widget: "string" }
-          - { label: "Box 2 Paragraph", name: "messages_box_2_paragraph", widget: "text" }
-          - { label: "Box 2 Button Text", name: "messages_box_2_button_text", widget: "string" }
-          - { label: "Box 2 Button Link", name: "messages_box_2_button_link", widget: "string" }
-          - { label: "Box 2 Image", name: "messages_box_2_image", widget: "image" }
-          - { label: "Box 2 Image Link", name: "messages_box_2_image_link", widget: "string" }
-          - { label: "Box 2 Image Alt Text", name: "messages_box_2_image_alt", widget: "string" }
-
       - file: "src/content/pages/home.md"
         label: "Home Page"
         name: "home"
@@ -116,3 +54,65 @@ collections:
 
           - { label: "Final Section Heading", name: "home_final_section_heading", widget: "string" }
           - { label: "Final Section Paragraph", name: "home_final_section_paragraph", widget: "text" }
+
+      - file: "src/content/pages/messages.md"
+        label: "Messages Page"
+        name: "messages"
+        slug: "messages"
+        format: "frontmatter"
+        preview_path: "messages"
+        fields:
+          - { label: "Page (Tab) Title", name: "messages_title", widget: "string" }
+
+          - { label: "Banner Title", name: "messages_banner_title", widget: "string" }
+
+          - { label: "Box 1 Heading", name: "messages_box_1_heading", widget: "string" }
+
+          - { label: "Box 2 Heading", name: "messages_box_2_heading", widget: "string" }
+          - { label: "Box 2 Paragraph", name: "messages_box_2_paragraph", widget: "text" }
+          - { label: "Box 2 Button Text", name: "messages_box_2_button_text", widget: "string" }
+          - { label: "Box 2 Button Link", name: "messages_box_2_button_link", widget: "string" }
+          - { label: "Box 2 Image", name: "messages_box_2_image", widget: "image" }
+          - { label: "Box 2 Image Link", name: "messages_box_2_image_link", widget: "string" }
+          - { label: "Box 2 Image Alt Text", name: "messages_box_2_image_alt", widget: "string" }
+
+      - file: "src/content/pages/giving.md"
+        label: "Giving Page"
+        name: "giving"
+        slug: "giving"
+        format: "frontmatter"
+        preview_path: "giving"
+        fields:
+          - { label: "Page (Tab) Title", name: "giving_title", widget: "string" }
+
+          - { label: "Banner Title", name: "giving_banner_title", widget: "string" }
+
+          - { label: "Image", name: "giving_image", widget: "image" }
+          - { label: "Image Alt Text", name: "giving_image_alt", widget: "string" }
+
+          - { label: "Heading", name: "giving_heading", widget: "string" }
+          - { label: "Paragraph", name: "giving_paragraph", widget: "text" }
+          - { label: "Button Link", name: "giving_button_link", widget: "string" }
+          - { label: "Button Text", name: "giving_button_text", widget: "string" }
+
+      - file: "src/content/pages/contact.md"
+        label: "Contact Page"
+        name: "contact"
+        slug: "contact"
+        format: "frontmatter"
+        preview_path: "contact"
+        fields:
+          - { label: "Page (Tab) Title", name: "contact_title", widget: "string" }
+
+          - { label: "Banner Title", name: "contact_banner_title", widget: "string" }
+
+          - { label: "Heading", name: "contact_heading", widget: "text" }                    
+
+          - { label: "Address Text", name: "contact_address_text", widget: "string" }
+          - { label: "Address Link", name: "contact_address_link", widget: "string" }
+          - { label: "Phone Text", name: "contact_phone_text", widget: "string" }
+          - { label: "Phone Link", name: "contact_phone_link", widget: "string" }
+          - { label: "Email Text", name: "contact_email_text", widget: "string" }
+          - { label: "Email Link", name: "contact_email_link", widget: "string" }
+
+          - { label: "Google Maps Embed Link", name: "contact_google_maps_embed_link", widget: "text" }
