@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://firstlutheranogdensburg.com/messages.html">
   <meta name="twitter:card" content="summary_large_image">
 
-  <title>Messages | First Lutheran Church Ogdensburg</title>
+  <title>{{ messages_title }} | First Lutheran Church Ogdensburg</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" />
@@ -42,7 +42,7 @@
   <main>
     <section class="page-banner messages-banner">
       <div class="banner-overlay">
-        <h1>Messages</h1>
+        <h1>{{ messages_banner_title }}</h1>
       </div>
     </section>
 
@@ -50,7 +50,7 @@
       <div class="container two-column-layout">
 
         <div class="messages-left">
-          <h2>Recent Messages</h2>
+          <h2>{{ messages_box_1_heading }}</h2>
           <div class="fb-embed-box">
             <div class="fb-page"
               data-href="https://www.facebook.com/firstlutheranogdensburg"
@@ -75,26 +75,26 @@
         </div>
 
         <div class="messages-right">
-          <h2>Children's Devotional</h2>
+          <h2>{{ messages_box_2_heading }}</h2>
           <div class="devotional-box">
             <div style="height: 2rem;"></div>
             <p class="devotional-description">
-              Help your children grow in faith with engaging, age-appropriate devotionals. We recommend this resource for families.
+              {{ messages_box_2_paragraph }}
             </p>
             <div style="height: 1rem;"></div>
 
-            <a href="https://www.keysforkids.org/Programming/Keys-for-Kids-Daily-Devotional/Read-Listen" 
+            <a href="{{ messages_box_2_button_link }}" 
                target="_blank" 
                rel="noopener noreferrer" 
                class="devotional-button">
-              Visit Keys for Kids Devotional
+              {{ messages_box_2_button_text }}
             </a>
 
             <div style="height: 2rem;"></div>
-            <a href="https://www.keysforkids.org/Programming/Keys-for-Kids-Daily-Devotional/Read-Listen" 
+            <a href="{{ messages_box_2_image_link }}" 
                target="_blank" 
                rel="noopener noreferrer">
-              <img src="/images/keys_for_kids.webp" alt="Keys for Kids" class="devotional-image" />
+              <img src="{{ messages_box_2_image }}" alt="{{ messages_box_2_image_alt }}" class="devotional-image" />
             </a>
           </div>
         </div>

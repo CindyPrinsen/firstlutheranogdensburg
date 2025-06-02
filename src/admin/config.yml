@@ -51,4 +51,25 @@ collections:
           - { label: "Email Text", name: "contact_email_text", widget: "string" }
           - { label: "Email Link", name: "contact_email_link", widget: "string" }
 
-          - { label: "Google Maps Embed Link", name: "google_maps_embed_link", widget: "text" }
+          - { label: "Google Maps Embed Link", name: "contact_google_maps_embed_link", widget: "text" }
+
+      - file: "src/content/pages/messages.md"
+        label: "Messages Page"
+        name: "messages"
+        slug: "messages"
+        format: "frontmatter"
+        preview_path: "messages"
+        fields:
+          - { label: "Page (Tab) Title", name: "messages_title", widget: "string" }
+
+          - { label: "Banner Title", name: "messages_banner_title", widget: "string" }
+
+          - { label: "Box 1 Heading", name: "messages_box_1_heading", widget: "string" }
+
+          - { label: "Box 2 Heading", name: "messages_box_2_heading", widget: "string" }
+          - { label: "Box 2 Paragraph", name: "messages_box_2_paragraph", widget: "text" }
+          - { label: "Box 2 Button Text", name: "messages_box_2_button_text", widget: "string" }
+          - { label: "Box 2 Button Link", name: "messages_box_2_button_link", widget: "string" }
+          - { label: "Box 2 Image", name: "messages_box_2_image", widget: "image" }
+          - { label: "Box 2 Image Link", name: "messages_box_2_image_link", widget: "string" }
+          - { label: "Box 2 Image Alt Text", name: "messages_box_2_image_alt", widget: "string" }
