@@ -23,10 +23,10 @@ collections:
 
           - { label: "Banner Title", name: "giving_banner_title", widget: "string" }
 
-          - { label: "Giving Image", name: "giving_image", widget: "image" }
+          - { label: "Image", name: "giving_image", widget: "image" }
 
-          - { label: "Giving Heading", name: "giving_heading", widget: "string" }
-          - { label: "Giving Paragraph", name: "giving_paragraph", widget: "text" }
+          - { label: "Heading", name: "giving_heading", widget: "string" }
+          - { label: "Paragraph", name: "giving_paragraph", widget: "text" }
           - { label: "Button Link", name: "giving_button_link", widget: "string" }
           - { label: "Button Text", name: "giving_button_text", widget: "string" }
 
@@ -40,3 +40,14 @@ collections:
           - { label: "Page (Tab) Title", name: "contact_title", widget: "string" }
 
           - { label: "Banner Title", name: "contact_banner_title", widget: "string" }
+
+          - { label: "Heading", name: "contact_heading", widget: "string" }          
+
+          - { label: "Address Text", name: "contact_address_text", widget: "string" }
+          - { label: "Address Link", name: "contact_address_link", widget: "string" }
+          - { label: "Phone Text", name: "contact_phone_text", widget: "string" }
+          - { label: "Phone Link", name: "contact_phone_link", widget: "string" }
+          - { label: "Email Text", name: "contact_email_text", widget: "string" }
+          - { label: "Email Link", name: "contact_email_link", widget: "string" }
+
+          - { label: "Google Maps Embed Link", name: "google_maps_embed_link", widget: "text" }
