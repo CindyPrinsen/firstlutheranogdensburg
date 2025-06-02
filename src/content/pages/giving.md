@@ -1,6 +1,7 @@
 ---
 layout: giving.njk
 title: Online Giving
+permalink: /giving/index.html
 logo_image: /media/logo_header.webp
 logo_alt: First Lutheran Church Logo
 nav_home: Home

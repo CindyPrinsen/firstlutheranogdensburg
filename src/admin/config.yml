@@ -5,6 +5,9 @@ backend:
 media_folder: "static/media"
 public_folder: "/media"
 
+editor:
+  preview: false
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -12,6 +15,9 @@ collections:
       - file: "src/content/pages/giving.md"
         label: "Giving Page"
         name: "giving"
+        slug: "giving"
+        format: "frontmatter"
+        preview_path: "giving"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Logo Image", name: "logo_image", widget: "image" }
