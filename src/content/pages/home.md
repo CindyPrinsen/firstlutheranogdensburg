@@ -1,31 +1,31 @@
 ---
+home_accent_row_box_2_paragraph: TEST1
+home_banner_title: TEST2
+home_banner_subtitle: TEST3
+home_info_grid_row_1_heading: TEST4
+home_info_grid_row_1_paragraph: TEST5
+home_info_grid_row_1_button_text: TEST6
+home_info_grid_row_1_button_link: TEST7
+home_info_grid_row_1_image: /media/test.jpg
+home_info_grid_row_1_image_alt: TEST8
+home_info_grid_row_2_heading: TEST9
+home_info_grid_row_2_paragraph: TEST10
+home_info_grid_row_2_button_text: TEST11
+home_info_grid_row_2_button_link: TEST12
+home_info_grid_row_2_image: /media/test.jpg
+home_info_grid_row_2_image_alt: TEST13
+home_info_grid_row_3_heading: TEST14
+home_info_grid_row_3_paragraph: TEST15
+home_info_grid_row_3_button_text: TEST16
+home_info_grid_row_3_button_link: TEST17
+home_info_grid_row_3_image: /media/test.jpg
+home_info_grid_row_3_image_alt: TEST18
+home_accent_row_box_1_heading: TEST19
+home_accent_row_box_2_heading: TEST20
+home_final_section_image_alt: TEST21
 layout: index.njk
+home_final_section_heading: TEST22
+home_final_section_paragraph: TEST23
 permalink: /
-home_banner_title: Welcome to First Lutheran Church Ogdensburg!
-home_banner_subtitle: Join us Sundays at 9:00 a.m.
-home_info_grid_row_1_heading: Messages
-home_info_grid_row_1_paragraph: You can listen to past sermons here. Simply click on the button below. An online kids devotional is also available.
-home_info_grid_row_1_button_text: Watch Now
-home_info_grid_row_1_button_link: /messages
-home_info_grid_row_1_image: 
-home_info_grid_row_1_image_alt: Messages
-home_info_grid_row_2_heading: Online Giving
-home_info_grid_row_2_paragraph: Online giving is available! Click the button below to give now.
-home_info_grid_row_2_button_text: Give Now
-home_info_grid_row_2_button_link: /giving
-home_info_grid_row_2_image: 
-home_info_grid_row_2_image_alt: Online Giving
-home_info_grid_row_3_heading: Contact Us
-home_info_grid_row_3_paragraph: We would love for you to join us each week. Contact us for more information or if you have any questions.
-home_info_grid_row_3_button_text: Contact Us
-home_info_grid_row_3_button_link: /contact
-home_info_grid_row_3_image: 
-home_info_grid_row_3_image_alt: Contact Us
-home_accent_row_box_1_heading: Follow Our Latest Messages
-home_accent_row_box_2_heading: Upcoming Events
-home_accent_row_box_2_paragraph: New events coming soon—stay tuned!
-home_final_section_image: 
-home_final_section_image_alt: About First Lutheran Ogdensburg
-home_final_section_heading: About First Lutheran Ogdensburg
-home_final_section_paragraph: First Lutheran Church is a family of sinners saved by grace through faith in the crucified and risen Jesus Christ. We love to worship God, laugh together, and lean on each other in good times and bad. Our mission is to love and serve God and love and serve people! Nestled in the scenic country woods of Ogdensburg, WI, just 10 miles from Waupaca's Chain of Lakes, we meet Sunday mornings at 9 a.m. at 700 Main Street in the village of Ogdensburg.
+home_final_section_image: /media/test.jpg
 ---
