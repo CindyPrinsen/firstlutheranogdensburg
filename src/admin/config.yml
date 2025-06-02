@@ -19,9 +19,9 @@ collections:
         format: "frontmatter"
         preview_path: "giving"
         fields:
-          - { label: "Page (Tab) Title", name: "title", widget: "string" }
+          - { label: "Page (Tab) Title", name: "giving_title", widget: "string" }
 
-          - { label: "Banner Title", name: "banner_title", widget: "string" }
+          - { label: "Banner Title", name: "giving_banner_title", widget: "string" }
 
           - { label: "Giving Image", name: "giving_image", widget: "image" }
 
@@ -37,6 +37,6 @@ collections:
         format: "frontmatter"
         preview_path: "contact"
         fields:
-          - { label: "Page (Tab) Title", name: "title", widget: "string" }
+          - { label: "Page (Tab) Title", name: "contact_title", widget: "string" }
 
-          - { label: "Banner Title", name: "banner_title", widget: "string" }
+          - { label: "Banner Title", name: "contact_banner_title", widget: "string" }

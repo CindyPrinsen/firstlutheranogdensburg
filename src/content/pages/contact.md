@@ -1,6 +1,6 @@
 ---
 layout: contact.njk
 permalink: /contact/index.html
-title: Online Giving
-banner_title: Contact Us
+contact_title: Online Giving
+contact_banner_title: Contact Us
 ---

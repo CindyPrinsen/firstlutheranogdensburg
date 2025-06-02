@@ -1,6 +1,6 @@
 ---
-title: Online Giving
-banner_title: Online Giving
+giving_title: Online Giving
+giving_banner_title: Online Giving
 giving_image: /media/giving_photo.webp
 giving_heading: Support Our Mission
 giving_paragraph: Click the button below to make a secure donation through
