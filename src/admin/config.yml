@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "static/media"
-public_folder: "/media"
+public_folder: "/static/media"
 
 editor:
   preview: false
