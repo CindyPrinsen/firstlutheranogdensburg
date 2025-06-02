@@ -41,7 +41,8 @@ collections:
 
           - { label: "Banner Title", name: "contact_banner_title", widget: "string" }
 
-          - { label: "Heading", name: "contact_heading", widget: "string" }          
+          - { label: "Heading Line 1", name: "contact_heading_line_1", widget: "string" }    
+          - { label: "Heading Line 2", name: "contact_heading_line_2", widget: "string" }                   
 
           - { label: "Address Text", name: "contact_address_text", widget: "string" }
           - { label: "Address Link", name: "contact_address_link", widget: "string" }

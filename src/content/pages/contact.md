@@ -3,7 +3,8 @@ layout: contact.njk
 permalink: /contact/index.html
 contact_title: Contact
 contact_banner_title: Contact Us
-contact_heading: We'd Love to Hear<br>from You!
+contact_heading_line_1: We'd Love to Hear
+contact_heading_line_2: from You!
 contact_address_text: 700 Main St, Ogdensburg, WI 54962
 contact_address_link: https://maps.app.goo.gl/E1j7w4suNiYC61tK6
 contact_phone_text: (920) 244-7881
