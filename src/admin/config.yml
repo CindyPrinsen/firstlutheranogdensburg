@@ -29,3 +29,14 @@ collections:
           - { label: "Giving Paragraph", name: "giving_paragraph", widget: "text" }
           - { label: "Button Link", name: "giving_button_link", widget: "string" }
           - { label: "Button Text", name: "giving_button_text", widget: "string" }
+
+      - file: "src/content/pages/contact.md"
+        label: "Contact Page"
+        name: "contact"
+        slug: "contact"
+        format: "frontmatter"
+        preview_path: "contact"
+        fields:
+          - { label: "Page (Tab) Title", name: "title", widget: "string" }
+
+          - { label: "Banner Title", name: "banner_title", widget: "string" }
