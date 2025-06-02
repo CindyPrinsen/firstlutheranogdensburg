@@ -1,8 +1,8 @@
 ---
 layout: messages.njk
 permalink: /messages/index.html
-messages_title: Contact
-messages_banner_title: Contact Us
+messages_title: Messages
+messages_banner_title: Messages
 messages_box_1_heading: Recent Messages
 messages_box_2_heading: Children's Devotional
 messages_box_2_paragraph: Help your children grow in faith with engaging, age-appropriate devotionals. We recommend this resource for families.
