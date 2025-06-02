@@ -79,7 +79,7 @@
           <div class="devotional-box">
             <div style="height: 2rem;"></div>
             <p class="devotional-description">
-              {{ messages_box_2_paragraph }}
+              {{ messages_box_2_paragraph | replace('\n', '<br>') | safe }}
             </p>
             <div style="height: 1rem;"></div>
 

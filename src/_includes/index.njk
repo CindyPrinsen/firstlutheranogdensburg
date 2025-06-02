@@ -57,7 +57,7 @@
       </div>
       <div class="info-text">
         <h2>{{ home_info_grid_row_1_heading }}</h2>
-        <p>{{ home_info_grid_row_1_paragraph }}</p>
+        <p>{{ home_info_grid_row_1_paragraph | replace('\n', '<br>') | safe }}</p>
         <a href="{{ home_info_grid_row_1_button_link }}" class="button">{{ home_info_grid_row_1_button_text }}</a>
       </div>
     </div>
@@ -68,7 +68,7 @@
       </div>
       <div class="info-text">
         <h2>{{ home_info_grid_row_2_heading }}</h2>
-        <p>{{ home_info_grid_row_2_paragraph }}</p>
+        <p>{{ home_info_grid_row_2_paragraph | replace('\n', '<br>') | safe }}</p>
         <a href="{{ home_info_grid_row_2_button_link }}" class="button">{{ home_info_grid_row_2_button_text }}</a>
       </div>
     </div>
@@ -79,7 +79,7 @@
       </div>
       <div class="info-text">
         <h2>{{ home_info_grid_row_3_heading }}</h2>
-        <p>{{ home_info_grid_row_3_paragraph }}</p>
+        <p>{{ home_info_grid_row_3_paragraph | replace('\n', '<br>') | safe }}</p>
         <a href="{{ home_info_grid_row_3_button_link }}" class="button">{{ home_info_grid_row_3_button_text }}</a>
       </div>
     </div>
@@ -121,7 +121,7 @@
     </div>
     <div class="column text">
       <h2>{{ home_final_section_heading }}</h2>
-      <p>{{ home_final_section_paragraph }}</p>
+      <p>{{ home_final_section_paragraph | replace('\n', '<br>') | safe }}</p>
     </div>
   </section>
 

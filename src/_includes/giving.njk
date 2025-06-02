@@ -53,7 +53,7 @@
         </div>
         <div class="giving-text">
           <h2>{{ giving_heading }}</h2>
-          <p>{{ giving_paragraph }}</p>
+          <p>{{ giving_paragraph | replace('\n', '<br>') | safe }}</p>
           <a href="{{ giving_button_link }}" target="_blank" class="button">{{ giving_button_text }}</a>
         </div>
       </div>
