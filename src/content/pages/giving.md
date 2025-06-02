@@ -6,7 +6,7 @@ nav_home: Home
 nav_messages: Messages
 nav_giving: Online Giving
 nav_contact: Contact
-banner_title: THIS IS A TEST
+banner_title: Online Giving
 giving_image: /media/giving_photo.webp
 giving_button_text: Give Now
 layout: giving.njk
