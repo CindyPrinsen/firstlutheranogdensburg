@@ -6,20 +6,27 @@ home_accent_row_box_2_paragraph: |-
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
 home_banner_subtitle: Join us Sundays at 9:00 a.m.
 home_info_grid_row_1_heading: Messages
-home_info_grid_row_1_paragraph: You can listen to past sermons here. Simply
-  click on the button below. An online kids devotional is also available.
+home_info_grid_row_1_paragraph: |-
+  You can listen to past sermons here. 
+
+  Simply click on the button below. An online kids devotional is also available.
 home_info_grid_row_1_button_text: Watch Now
 home_info_grid_row_1_button_link: /messages
 home_info_grid_row_1_image: /media/messages.webp
 home_info_grid_row_1_image_alt: Messages
 home_info_grid_row_2_heading: Online Giving
-home_info_grid_row_2_paragraph: Online giving is available! Click the button below to give now.
+home_info_grid_row_2_paragraph: |-
+  Online giving is available! 
+
+  Click the button below to give now.
 home_info_grid_row_2_button_text: Give Now
 home_info_grid_row_2_button_link: /giving
 home_info_grid_row_2_image: /media/giving.webp
 home_info_grid_row_2_image_alt: Online Giving
 home_info_grid_row_3_heading: Contact Us
-home_info_grid_row_3_paragraph: We would love for you to join us each week.
+home_info_grid_row_3_paragraph: |-
+  We would love for you to join us each week. 
+
   Contact us for more information or if you have any questions.
 home_info_grid_row_3_button_text: Contact Us
 home_info_grid_row_3_button_link: /contact
@@ -35,7 +42,6 @@ home_final_section_paragraph: >-
   the crucified and risen Jesus Christ. We love to worship God, laugh together,
   and lean on each other in good times and bad. Our mission is to love and serve
   God and love and serve people!
-
 
   Nestled in the scenic country woods of Ogdensburg, WI, just 10 miles from Waupaca's Chain of Lakes, we meet Sunday mornings at 9 a.m. at 700 Main Street in the village of Ogdensburg.
 permalink: /
