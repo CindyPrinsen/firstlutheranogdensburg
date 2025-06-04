@@ -22,7 +22,7 @@ home_info_grid_row_3_button_text: Contact Us
 home_info_grid_row_3_button_link: /contact
 home_info_grid_row_3_image: /media/contact.webp
 home_info_grid_row_3_image_alt: Contact Us
-home_accent_row_box_1_heading: Follow Our Latest Messages
+home_accent_row_box_1_heading: Stay Up to Date on Facebook!
 home_accent_row_box_2_heading: Upcoming Events
 home_final_section_image_alt: About First Lutheran Ogdensburg
 layout: index.njk
