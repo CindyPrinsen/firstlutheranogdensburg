@@ -3,7 +3,7 @@ giving_title: Giving
 giving_banner_title: Online Giving
 giving_image: /media/giving_photo.webp
 giving_image_alt: Giving Image
-giving_heading: Support Our Mission
+giving_heading: Give now!
 giving_button_text: Give Now
 layout: giving.njk
 permalink: /giving/index.html
