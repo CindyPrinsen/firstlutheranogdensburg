@@ -51,27 +51,8 @@
 
         <div class="messages-left">
           <h2>{{ messages_box_1_heading }}</h2>
-          <div class="fb-embed-box">
-            <div class="fb-page"
-              data-href="https://www.facebook.com/firstlutheranogdensburg"
-              data-tabs="timeline"
-              data-width="500"
-              data-height="575"
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="true"
-              data-show-facepile="false">
-              <blockquote cite="https://www.facebook.com/firstlutheranogdensburg" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/firstlutheranogdensburg">First Lutheran Church Ogdensburg</a>
-              </blockquote>
-
-            </div>
-
-            <p class="external-link">
-              <a href="https://www.facebook.com/firstlutheranogdensburg" target="_blank" rel="noopener noreferrer">
-                View more messages on Facebook
-              </a>
-            </p>
+          <div class="yt-embed-box">
+            <div id="latest-video"></div>
           </div>
         </div>
 
@@ -111,11 +92,52 @@
     </script>
   </footer>
 
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
-    nonce="XYZ"></script>
-
   <script src="/script.js"></script>
+
+  <script>
+    async function loadLatestVideo() {
+      const feedUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCZDFgiBOfX-FmJ8Y7K2cdXw';
+      const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
+
+      try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        const latestVideo = data.items[0];
+        const link = latestVideo.link;
+        const match = link.match(/v=([^&]+)/);
+        const videoId = match ? match[1] : null;
+
+        if (!videoId) throw new Error("No video ID found.");
+
+        const container = document.getElementById('latest-video');
+
+        container.innerHTML = `
+          <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" style="text-decoration: none; position: relative; display: inline-block; width: 100%; max-width: 360px;">
+            <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" style="width: 90%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 12px;">
+            <div style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background: rgba(0, 0, 0, 0.6);
+              border-radius: 50%;
+              padding: 20px;
+            ">
+              <svg viewBox="0 0 68 48" width="48" height="34">
+                <path d="M66.52 7.85a8 8 0 00-5.63-5.66C56.78 1 34 1 34 1s-22.78 0-26.89 1.19a8 8 0 00-5.63 5.66A84.09 84.09 0 000 24a84.09 84.09 0 001.48 16.15 8 8 0 005.63 5.66C11.22 47 34 47 34 47s22.78 0 26.89-1.19a8 8 0 005.63-5.66A84.09 84.09 0 0068 24a84.09 84.09 0 00-1.48-16.15z" fill="#f00"></path>
+                <path d="M45 24L27 14v20z" fill="#fff"></path>
+              </svg>
+            </div>
+          </a>
+        `;
+
+      } catch (err) {
+        console.error("Failed to load video thumbnail:", err);
+      }
+    }
+
+    loadLatestVideo();
+  </script>
+  
 </body>
 </html>

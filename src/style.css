@@ -488,7 +488,7 @@ footer p {
   margin-bottom: 1rem;
 }
 
-.devotional-box, .fb-embed-box {
+.devotional-box, .yt-embed-box {
   background-color: #f9f9f9;
   padding: 1.5rem;
   border-radius: 8px;
@@ -497,6 +497,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -530,15 +531,6 @@ footer p {
   max-width: 350px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.fb-embed-box .fb-page {
-  width: 100% !important;
-  max-width: 100%;
-}
-
-.fb-embed-box .external-link {
-  margin-top: 1rem;
 }
 
 /* ==================================
