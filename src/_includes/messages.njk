@@ -65,39 +65,6 @@
                 <a href="https://www.facebook.com/firstlutheranogdensburg">First Lutheran Church Ogdensburg</a>
               </blockquote>
 
-              <div id="latest-video"></div>
-
-                <script>
-                  async function loadLatestVideo() {
-                    const feedUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCZDFgiBOfX-FmJ8Y7K2cdXw';
-                    const proxy = 'https://api.allorigins.win/get?url=' + encodeURIComponent(feedUrl); // bypass CORS
-
-                    try {
-                      const res = await fetch(proxy);
-                      const data = await res.json();
-
-                      const parser = new DOMParser();
-                      const xml = parser.parseFromString(data.contents, 'text/xml');
-                      const firstEntry = xml.querySelector('entry');
-                      const videoId = firstEntry.querySelector('yt\\:videoId').textContent;
-
-                      const iframe = document.createElement('iframe');
-                      iframe.width = '560';
-                      iframe.height = '315';
-                      iframe.src = `https://www.youtube.com/embed/${videoId}`;
-                      iframe.frameBorder = '0';
-                      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                      iframe.allowFullscreen = true;
-
-                      document.getElementById('latest-video').appendChild(iframe);
-                    } catch (error) {
-                      console.error('Failed to load latest video:', error);
-                    }
-                  }
-
-                  loadLatestVideo();
-                </script>
-
             </div>
 
             <p class="external-link">
