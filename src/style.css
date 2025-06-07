@@ -511,6 +511,16 @@ footer p {
   margin-right: auto;
 }
 
+.yt-embed-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .devotional-box .devotional-button {
   background-color: #86a96b;
   color: #fdfaf5;
