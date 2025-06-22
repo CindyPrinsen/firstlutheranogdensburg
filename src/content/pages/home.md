@@ -1,5 +1,8 @@
 ---
-home_accent_row_box_2_paragraph: New events coming soon—stay tuned!
+home_accent_row_box_2_paragraph: |-
+  All Church Picnic - July 20th at 9 am.
+  Featuring the High Lonesome Country Band!
+  Everyone is welcome.
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
 home_banner_subtitle: Join us Sundays at 9:00 a.m.
 home_info_grid_row_1_heading: Messages
