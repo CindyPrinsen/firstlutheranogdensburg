@@ -1,8 +1,9 @@
 ---
-home_accent_row_box_2_paragraph: |-
-  All Church Picnic - July 20th at 9 am.
-  Featuring the High Lonesome Country Band!
-  Everyone is welcome.
+home_accent_row_box_2_paragraph: >-
+  Harvest Dinner with Church Service led by Dan Holmes, Sunday, September 28th
+  at 9:00.
+
+  All are welcome.
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
 home_banner_subtitle: Join us Sundays at 9:00 a.m.
 home_info_grid_row_1_heading: Messages
