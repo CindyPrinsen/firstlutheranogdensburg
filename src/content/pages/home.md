@@ -1,9 +1,5 @@
 ---
-home_accent_row_box_2_paragraph: >-
-  Harvest Dinner with Church Service led by Dan Holmes, Sunday, September 28th
-  at 9:00.
-
-  All are welcome.
+home_accent_row_box_2_paragraph: Updates for special services will be posted as soon as they are available.
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
 home_banner_subtitle: Join us Sundays at 9:00 a.m.
 home_info_grid_row_1_heading: Messages
