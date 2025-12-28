@@ -1,5 +1,5 @@
 ---
-home_accent_row_box_2_paragraph: Christmas Eve Candlelight Service 5 p.m.
+home_accent_row_box_2_paragraph: "Watch for new upcoming dates for special services. "
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
 home_banner_subtitle: Join us Sundays at 9:00 a.m.
 home_info_grid_row_1_heading: Messages
