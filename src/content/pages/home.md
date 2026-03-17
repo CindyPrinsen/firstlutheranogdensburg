@@ -1,6 +1,6 @@
 ---
 home_accent_row_box_2_paragraph: |-
-  February 18, 2026 - Ash Wednesday -Service at 6pm
+  Thursday April 2, 2026 - Holy Thursday -Service at 6pm
   Friday April 3, 2026, Good Friday Service 6pm
   Sunday April 5, 2026 - Easter Service 9am
 home_banner_title: Welcome to First Lutheran Church Ogdensburg!
